@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+    <RelativeLayout
+        android:id="@+id/barRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <TextView
+            android:id="@+id/tvSwiftGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adlam_display"
+            android:textSize="15sp"
+            android:text="@string/swiftGo" />
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSwiftGo"
+            android:fontFamily="@font/adlam_display"
+            android:textSize="25sp"
+            android:layout_marginTop="3dp"
+            android:text="11 minutes" />
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTime"
+            android:fontFamily="@font/adlam_display"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:text="City Light Town, Athwa" />
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddress"
+            android:inputType="text"
+            android:drawableEnd="@mipmap/searchinterfacesymbol"
+            android:background="@drawable/edittext_background"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:hint="Search" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/virust"
+            android:text="Welcome"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/tvSubWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Order now to avail exciting offers!"
+            android:textSize="14sp" />
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="1000"
+            app:iss_delay="1000"
+            app:iss_text_align="CENTER"
+            android:layout_below="@id/tvSubWelcome"
+            android:layout_marginTop="14dp"/>
+
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tvBestSellers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSubWelcome"
+        android:fontFamily="@font/adlam_display"
+        android:text="BestSellers"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dairyImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/applogo"/>
+
+            <TextView
+                android:id="@+id/dairyProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dairyImg"
+                android:text="Dairy, Bread\n&amp; Eggs"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

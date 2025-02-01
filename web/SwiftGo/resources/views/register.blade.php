@@ -138,7 +138,7 @@
               <h4 class="mb-2">Adventure starts here 🚀</h4>
               <p class="mb-4">Make your app management easy and fun!</p>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <form id="formAuthentication" class="mb-3" action="/register_user" method="POST">
                 <div class="mb-3">
                   <label for="username" class="form-label">Username</label>
                   <input
@@ -150,10 +150,22 @@
                     autofocus
                   />
                 </div>
+
+                <span>
+                  @error('username')
+                      {{$message}}
+                  @enderror
+               </span>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
                   <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
                 </div>
+
+                <span>
+                  @error('email')
+                      {{$message}}
+                  @enderror
+               </span>
                 <div class="mb-3 form-password-toggle">
                   <label class="form-label" for="password">Password</label>
                   <div class="input-group input-group-merge">
@@ -167,6 +179,12 @@
                     />
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
+
+                  <span>
+                    @error('password')
+                        {{$message}}
+                    @enderror
+                 </span>
                 </div>
 
                 <div class="mb-3">
@@ -183,7 +201,7 @@
 
               <p class="text-center">
                 <span>Already have an account?</span>
-                <a href="auth-login-basic.html">
+                <a href="/login">
                   <span>Sign in instead</span>
                 </a>
               </p>

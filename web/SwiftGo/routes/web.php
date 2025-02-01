@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\CouponController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,9 +31,14 @@ Route::resource("/banner",BannerController::class);
 Route::get('/login', function () {
     return view('login');
 });
+Route::post('/login_user',[AdminController::class,'login']);
 
 
 //Register
 Route::get('/register', function () {
-    return view('Register');
+    return view('register');
 });
+Route::post('/register_user',[AdminController::class,'register']);
+
+//coupon
+Route::resource('/coupon',CouponController::class);

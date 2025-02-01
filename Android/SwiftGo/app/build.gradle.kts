@@ -32,6 +32,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.denzcoskun.imageslideshow)
     implementation(libs.com.github.bumptech.glide.glide2)
     annotationProcessor(libs.compiler)
     implementation(libs.appcompat)
