@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:gravity="center"
+android:layout_height="match_parent"
+tools:context=".activity.OTPActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+
+
+    <EditText
+        android:layout_width="50dp"
+        android:id="@+id/etotp1"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:maxLength="1"
+        android:inputType="number"
+        android:background="@drawable/custom_et"/>
+    <EditText
+        android:layout_width="50dp"
+        android:id="@+id/etotp2"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:maxLength="1"
+        android:inputType="number"
+        android:background="@drawable/custom_et"/>
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/etotp3"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:maxLength="1"
+        android:inputType="number"
+        android:background="@drawable/custom_et"/>
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/etotp4"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:maxLength="1"
+        android:layout_marginRight="10dp"
+        android:inputType="number"
+        android:background="@drawable/custom_et"/>
+</LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="button"
+    android:layout_marginTop="10dp"
+    android:id="@+id/btnsub">
+
+</Button>
+
+
+
+</LinearLayout>

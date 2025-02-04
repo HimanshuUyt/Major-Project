@@ -1,4 +1,4 @@
-package com.example.swiftgo.Activity;
+package com.example.swiftgo.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import com.bumptech.glide.Glide;
 import com.example.swiftgo.R;
-import com.example.swiftgo.utlits.ConstantData;
+import com.example.swiftgo.utils.ConstantData;
 
 public class SplashActivity extends AppCompatActivity {
 

@@ -32,6 +32,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.okhttp)
     implementation(libs.denzcoskun.imageslideshow)
     implementation(libs.com.github.bumptech.glide.glide2)
     annotationProcessor(libs.compiler)
@@ -42,4 +43,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }

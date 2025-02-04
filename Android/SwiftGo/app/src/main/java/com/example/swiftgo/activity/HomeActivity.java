@@ -1,4 +1,4 @@
-package com.example.swiftgo.Activity;
+package com.example.swiftgo.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,7 +13,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.swiftgo.R;
-import com.example.swiftgo.utlits.ConstantData;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -31,21 +30,21 @@ public class HomeActivity extends AppCompatActivity {
             return insets;
         });
 
-        tvEmail= findViewById(R.id.tvEmail);
-        btnLogout = findViewById(R.id.btnLogout);
-
-        sp = getSharedPreferences(ConstantData.SP_NAME,MODE_APPEND);
-        String email = sp.getString(ConstantData.SP_EMAIL,"");
-        tvEmail.setText("Hello "+email);
+//        tvEmail= findViewById(R.id.tvEmail);
+//        btnLogout = findViewById(R.id.btnLogout);
+//
+//        sp = getSharedPreferences(ConstantData.SP_NAME,MODE_APPEND);
+//        String email = sp.getString(ConstantData.SP_EMAIL,"");
+//        tvEmail.setText("Hello "+email);
 
         btnLogout.setOnClickListener(v -> {
             SharedPreferences.Editor ed = sp.edit();
             ed.clear();
             ed.apply();
 
-            Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
-            startActivity(intent);
-            finish();
+//            Intent intent = new Intent(HomeActivity.this, LoginA.class);
+//            startActivity(intent);
+//            finish();
         });
 
 //        bnvhome= findViewById(R.id.bnvHome);

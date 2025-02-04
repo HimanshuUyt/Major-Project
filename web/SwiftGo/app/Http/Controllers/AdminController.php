@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class AdminController extends Controller
 {
@@ -18,7 +19,7 @@ class AdminController extends Controller
             "email"=>"required",
             "password"=>"required"
         ]);
-        $data=User1::where("email",$request->email)->where("password",md5($request->password))->first();
+        $data=User::where("email",$request->email)->where("password",md5($request->password))->first();
 
         if(strcasecmp($request->email,"admin")==0 && strcasecmp($request->password,"admin")==0){
             return redirect('admin');
@@ -48,7 +49,7 @@ class AdminController extends Controller
             "address"=>"required"
         ]);
 
-        $table = new User1();
+        $table = new User();
         $table->fullname = $request->fullname;
         $table->email = $request->email;
         $table->username = $request->username;

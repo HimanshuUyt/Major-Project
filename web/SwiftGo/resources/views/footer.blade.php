@@ -1,80 +1,39 @@
-</div>
-<!-- / Content -->
-
-<!-- Footer -->
-<footer class="content-footer footer bg-footer-theme">
-  <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-    <div class="mb-2 mb-md-0">
-      ©
+<footer class="mt-auto w-full border-t border-default-200 bg-white p-6 dark:bg-default-50 print:hidden">
+  <div class="flex flex-wrap items-center justify-between gap-6">
+    <p class="text-center font-semibold text-default-600 lg:text-start">
       <script>
         document.write(new Date().getFullYear());
       </script>
-      , made with ❤️ by
-      <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">SwiftGo</a>
-    </div>
-    <div>
-      <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-      <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+      Designed & Crafted With 💚 by
+      <a class="text-primary" href="https://coderthemes.com/" target="_blank">SwiftGo</a>
+    </p>
 
-      <a
-        href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-        target="_blank"
-        class="footer-link me-4"
-        >Documentation</a
-      >
-
-      <a
-        href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-        target="_blank"
-        class="footer-link me-4"
-        >Support</a
-      >
+    <div class="flex justify-end gap-6 text-center">
+      <a href="javascript:void(0)" class="font-semibold text-default-500">
+        Terms
+      </a>
+      <a href="javascript:void(0)" class="font-semibold text-default-500">
+        Privacy
+      </a>
+      <a href="javascript:void(0)" class="font-semibold text-default-500">
+        Cookies
+      </a>
     </div>
   </div>
 </footer>
-<!-- / Footer -->
 
-<div class="content-backdrop fade"></div>
+<button class="fixed bottom-18 end-4 z-50 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary opacity-0 backdrop-blur-xl transition-all duration-500 lg:bottom-4 print:hidden" data-toggle="back-to-top">
+  <i class="ti ti-chevron-up text-xl"></i>
+</button>
 </div>
-<!-- Content wrapper -->
-</div>
-<!-- / Layout page -->
-</div>
+<!-- End Content -->
 
-<!-- Overlay -->
-<div class="layout-overlay layout-menu-toggle"></div>
-</div>
-<!-- / Layout wrapper -->
+<!-- Theme Js -->
 
-<div class="buy-now">
-<a
-href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
-target="_blank"
-class="btn btn-danger btn-buy-now"
->Upgrade to Pro</a
->
-</div>
 
-<!-- Core JS -->
-<!-- build:js assets/vendor/js/core.js -->
-<script src="/assets/vendor/libs/jquery/jquery.js"></script>
-<script src="/assets/vendor/libs/popper/popper.js"></script>
-<script src="/assets/vendor/js/bootstrap.js"></script>
-<script src="/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-<script src="/assets/vendor/js/menu.js"></script>
-<!-- endbuild -->
-
-<!-- Vendors JS -->
-<script src="/assets/vendor/libs/apex-charts/apexcharts.js"></script>
-
-<!-- Main JS -->
-<script src="/assets/js/main.js"></script>
-
-<!-- Page JS -->
-<script src="/assets/js/dashboards-analytics.js"></script>
-
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
+
+
+<!-- Mirrored from coderthemes.com/wb/greencart/admin-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jan 2025 08:54:43 GMT -->
 </html>

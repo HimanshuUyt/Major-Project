@@ -1,68 +1,63 @@
 @include('header')
 
-<!-- Striped Rows -->
-<div class="container max-width">
-    <div class="card mt-4">
-        <a style="width: 200px; margin: 15px;" href="{{ route('banner.create') }}" class="btn btn-outline-primary rounded-full">Add Banner</a>
-        <div class="table-responsive text-nowrap">
-            @if($data->isEmpty())
-                <div class="text-center my-3">
-                    <h5>No banners available.</h5>
-                </div>
-            @else
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>SR.NO</th>
-                            <th>Banner Pic</th>
-                            <th>Status</th>
-                            <th>Actions</th>
+<div class="container mt-5">
+    <!-- Start card -->
+    <div class="border border-default-200 rounded-lg bg-white dark:bg-default-50 h-fit">
+        <div class="flex items-center justify-between py-4 px-5">
+            <a href="{{ route('banner.create') }}" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-sm text-center bg-transparent hover:bg-emerald-600 border-emerald-600 text-emerald-600 hover:text-white rounded-md">Add Banner</a>
+        </div>
+        <div class="border-t border-dashed border-default-200">
+        <div class="overflow-x-auto">
+            <div class="min-w-full inline-block align-middle">
+            <div class="overflow-hidden">
+                <table class="min-w-full divide-y divide-default-200">
+                <thead>
+                    <tr>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-default-600 uppercase">SR.NO</th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-default-600 uppercase">Banner Pic</th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-default-600 uppercase">Status</th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-default-600 uppercase">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-default-200">
+                    @foreach ($data as $item) 
+                        <tr class="hover:bg-default-100">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-default-800">{{ $loop->iteration }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-default-800">
+                                @if (file_exists(public_path($item->banner_pic)))
+                                    <img src="{{ asset($item->banner_pic) }}" height="100" width="100" alt="Banner Image">
+                                @else
+                                    <img src="{{ asset('/img/no_image.jpg') }}" height="100" width="100" alt="No Image">
+                                @endif
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-default-800">
+                                <span class="badge {{ $item->status ? 'bg-label-primary' : 'bg-label-danger' }} me-1">
+                                    {{ $item->status ? 'Active' : 'Inactive' }}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a class="text-primary hover:text-primary-600 transition-all" href="{{ route('category.edit', $item->_id) }}">
+                                    <i class="bx bx-edit-alt me-1"></i> Edit
+                                </a>
+                                <form action="{{ route('category.destroy', $item->_id) }}" method="post" onsubmit="confirmDelete(event)" style="display: inline;">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" class="text-primary hover:text-primary-600 transition-all">
+                                        <i class="bx bx-trash me-1"></i> Delete
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                        @foreach ($data as $item)
-                            <tr>
-                                <td><strong>{{ $loop->iteration }}</strong></td>
-                                <td>
-                                    @if (file_exists(public_path($item->banner_pic)))
-                                        <img src="{{ asset($item->banner_pic) }}" height="100" width="100" alt="Banner Image">
-                                    @else
-                                        <img src="{{ asset('/img/no_image.jpg') }}" height="100" width="100" alt="No Image">
-                                    @endif
-                                </td>
-                                <td>
-                                    <span class="badge {{ $item->status ? 'bg-label-primary' : 'bg-label-danger' }} me-1">
-                                        {{ $item->status ? 'Active' : 'Inactive' }}
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                        </button>
-                                        <div class="dropdown-menu mt-2">
-                                            <a class="dropdown-item" href="{{ route('banner.edit', $item->_id) }}">
-                                                <i class="bx bx-edit-alt me-1"></i> Edit
-                                            </a>
-                                            <form action="{{ route('banner.destroy', $item->_id) }}" method="POST" onsubmit="return confirmDelete(event)">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="dropdown-item text-danger">
-                                                    <i class="bx bx-trash me-1"></i> Delete
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        @endforeach
-                    </tbody>
+                    @endforeach
+                </tbody>
                 </table>
-            @endif
+            </div>
+            </div>
+        </div>
         </div>
     </div>
+    <!-- end card -->
 </div>
-<!--/ Striped Rows -->
 
 <!-- Success Alert -->
 @if(Session::has('success'))
