@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\ApiController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,5 +47,12 @@ Route::post('/register_user',[AdminController::class,'register']);
 Route::resource('/coupon',CouponController::class);
 
 //Api
-Route::get('/api_data', [ApiController::class,'register']);
-Route::post('/api_register',[ApiController::class,'register']);
+// Route::get('/api_data', [ApiController::class,'register']);
+Route::post('/api_register',[ApiController::class,'register_user']);
+
+// Route::get('/api_data', [ApiController::class,'login']);
+Route::post('/api_login',[ApiController::class,'login_user']);
+
+
+//product
+Route::resource("/product",ProductController::class);

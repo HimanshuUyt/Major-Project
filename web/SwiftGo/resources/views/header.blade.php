@@ -7,17 +7,17 @@
   <meta charset="utf-8" />
   <title>SwiftGo</title>
   <!-- Theme favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon-712e565d.ico" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon-712e565d.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta content="" name="description" />
   <meta content="coderthemes" name="author" />
 
   <!-- Head js -->
-    <script type="module" crossorigin src="assets/admin-dashboard-27890ed3.js"></script>
-    <link rel="modulepreload" crossorigin href="assets/theme-9c065fc6.js">
-    <link rel="modulepreload" crossorigin href="assets/apexcharts.common-4fae8482.js">
-    <link rel="modulepreload" crossorigin href="assets/colors-4fe812b9.js">
-    <link rel="stylesheet" href="assets/theme-ecf0ae99.css">
+    <script type="module" crossorigin src="/assets/admin-dashboard-27890ed3.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/theme-9c065fc6.js">
+    <link rel="modulepreload" crossorigin href="/assets/apexcharts.common-4fae8482.js">
+    <link rel="modulepreload" crossorigin href="/assets/colors-4fe812b9.js">
+    <link rel="stylesheet" href="/assets/theme-ecf0ae99.css">
   </head>
 
 <body>
@@ -27,8 +27,8 @@
   <div id="application-sidebar" class="hs-overlay fixed inset-y-0 start-0 z-60 hidden w-64 -translate-x-full transform overflow-y-auto border-e border-default-200 bg-white transition-all duration-300 hs-overlay-open:translate-x-0 dark:bg-default-50 lg:bottom-0 lg:end-auto lg:z-30 lg:block lg:translate-x-0 rtl:translate-x-full rtl:hs-overlay-open:translate-x-0 rtl:lg:translate-x-0 print:hidden">
     <div class="sticky top-0 flex h-18 items-center justify-start px-6">
       <a href="admin-dashboard.html">
-        <img src="assets/logo-dark-1caee452.png" alt="logo" class="flex h-10 dark:hidden" />
-        <img src="assets/logo-50f51c55.png" alt="logo" class="hidden h-10 dark:flex" />
+        <img src="/assets/logo-dark-1caee452.png" alt="logo" class="flex h-10 dark:hidden" />
+        <img src="/assets/logo-50f51c55.png" alt="logo" class="hidden h-10 dark:flex" />
       </a>
     </div>
 
@@ -727,7 +727,7 @@
       <div class="mt-2">
         <div class="-mb-4 flex flex-col items-center justify-center rounded-t-full border border-b-0 border-dashed border-primary-500/40 bg-primary-500/20 bg-cover bg-no-repeat px-4 pb-4 pt-10 text-center text-sm text-default-700" href="javascript:void(0)">
           <div class="relative inline-flex h-16 w-16 items-center justify-center rounded-full border border-dashed border-primary bg-primary/20">
-            <img src="assets/favicon-712e565d.ico" alt="" class="absolute start-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2" />
+            <img src="/assets/favicon-712e565d.ico" alt="" class="absolute start-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2" />
           </div>
           <p class="my-4 text-sm font-semibold text-primary-700">
             🔥 Upgrade Your Plan. Find Out here
@@ -757,8 +757,8 @@
         <!-- Logo -->
         <div class="flex lg:hidden">
           <a href="admin-dashboard.html">
-            <img src="assets/logo-dark-1caee452.png" alt="logo" class="flex h-10 w-full dark:hidden" />
-            <img src="assets/logo-50f51c55.png" alt="logo" class="hidden h-10 w-full dark:flex" />
+            <img src="/assets/logo-dark-1caee452.png" alt="logo" class="flex h-10 w-full dark:hidden" />
+            <img src="/assets/logo-50f51c55.png" alt="logo" class="hidden h-10 w-full dark:flex" />
           </a>
         </div>
 
@@ -835,7 +835,7 @@
                   <h5 class="mb-2 text-xs text-default-700">Today</h5>
 
                   <a href="javascript:void(0);" class="mb-4 flex items-center">
-                    <img src="assets/1-f1564e7c.png" class="h-10 w-10 rounded-full" />
+                    <img src="/assets/1-f1564e7c.png" class="h-10 w-10 rounded-full" />
                     <div class="ms-2 flex-grow truncate">
                       <div class="flex items-center justify-between">
                         <h5 class="text-sm font-medium text-default-800">
@@ -849,7 +849,7 @@
 
                   <a href="javascript:void(0);" class="mb-4 flex items-center">
                     <div class="flex-shrink-0">
-                      <img src="assets/2-cb0540ba.png" class="h-10 w-10 rounded-full" />
+                      <img src="/assets/2-cb0540ba.png" class="h-10 w-10 rounded-full" />
                     </div>
                     <div class="ms-2 flex-grow truncate">
                       <div class="flex items-center justify-between">
@@ -862,7 +862,7 @@
 
                   <a href="javascript:void(0);" class="mb-4 flex items-center">
                     <div class="flex-shrink-0">
-                      <img src="assets/3-7b02f585.png" class="h-10 w-10 rounded-full" />
+                      <img src="/assets/3-7b02f585.png" class="h-10 w-10 rounded-full" />
                     </div>
                     <div class="ms-2 flex-grow truncate">
                       <div class="flex items-center justify-between">
@@ -889,7 +889,7 @@
 
                   <a href="javascript:void(0);" class="flex">
                     <div class="flex-shrink-0">
-                      <img src="assets/5-0368e7b5.png" class="h-10 w-10 rounded-full" />
+                      <img src="/assets/5-0368e7b5.png" class="h-10 w-10 rounded-full" />
                     </div>
                     <div class="ms-2 flex-grow truncate">
                       <h5 class="mb-1 text-sm font-semibold">Karen Robinson</h5>
@@ -909,7 +909,7 @@
           <div class="flex">
             <div class="hs-dropdown relative inline-flex">
               <button id="hs-dropdown-with-header" type="button" class="hs-dropdown-toggle inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-md align-middle text-xs font-medium text-default-700 transition-all">
-                <img class="inline-block h-10 w-10 rounded-full" src="assets/7-37b455da.png" />
+                <img class="inline-block h-10 w-10 rounded-full" src="/assets/7-37b455da.png" />
                 <div class="hidden text-start lg:block">
                   <p class="text-xs font-semibold text-default-700">Mary Hopkins</p>
                   <p class="mt-1 text-xs text-default-500">Admin</p>
